@@ -1,0 +1,60 @@
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:50:51.994217
+Start name method: authorization
+
+End time: 2024-05-06 16:51:16.890861
+End name method: authorization
+URL: https://zrdshop.ru/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:51:16.890861
+Start name method: select_product
+
+End time: 2024-05-06 16:51:42.270223
+End name method: select_product
+URL: https://zrdshop.ru/cart/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:51:42.271225
+Start name method: order_product
+
+End time: 2024-05-06 16:51:49.537498
+End name method: order_product
+URL: https://zrdshop.ru/checkout/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:51:49.538500
+Start name method: payment_details
+
+End time: 2024-05-06 16:52:29.157166
+End name method: payment_details
+URL: https://zrdshop.ru/checkout/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:52:29.157166
+Start name method: payment_confirm
+
+End time: 2024-05-06 16:52:33.000933
+End name method: payment_confirm
+URL: https://yoomoney.ru/checkout/payments/v2/contract?orderId=2dcaf45c-000f-5000-8000-187316cb35be
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:52:40.012151
+Start name method: finish
+
+End time: 2024-05-06 16:52:40.126313
+End name method: finish
+URL: https://yoomoney.ru/checkout/payments/v2/contract?orderId=2dcaf45c-000f-5000-8000-187316cb35be
+-------

@@ -1,0 +1,30 @@
+
+Start test
+Current url is: https://zrdshop.ru/
+Click enter account button
+Input email
+Input password
+Click login button
+Value word is ok
+Click shop button
+Current url is: https://zrdshop.ru/
+Click search field
+Click buy product
+Click cart add
+Current url is: https://zrdshop.ru/cart/
+Click create order
+Current url is: https://zrdshop.ru/checkout/
+Input first name
+Input last name
+Input address
+Input locality
+Input region
+Input index
+Input telephone
+Click delivery choice button
+Current url is: https://zrdshop.ru/checkout/
+Click confirm pay button
+Current url is: https://yoomoney.ru/checkout/payments/v2/contract?orderId=2dcaf45c-000f-5000-8000-187316cb35be
+Screenshot done
+
+Finish test

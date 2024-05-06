@@ -1,0 +1,36 @@
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:55:28.484048
+Start name method: authorization
+
+End time: 2024-05-06 16:55:56.015215
+End name method: authorization
+URL: https://zrdshop.ru/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:55:56.015215
+Start name method: select_product
+
+End time: 2024-05-06 16:56:21.464241
+End name method: select_product
+URL: https://zrdshop.ru/cart/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:56:21.464241
+Start name method: order_product
+
+End time: 2024-05-06 16:56:28.597383
+End name method: order_product
+URL: https://zrdshop.ru/checkout/
+-------
+
+-------
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2024-05-06 16:56:28.598384
+Start name method: payment_details
+

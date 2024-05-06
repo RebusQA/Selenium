@@ -1,0 +1,19 @@
+
+Start test
+Current url is: https://zrdshop.ru/
+Click enter account button
+Input email
+Input password
+Click login button
+Value word is ok
+Click shop button
+Current url is: https://zrdshop.ru/
+Click search field
+Click buy product
+Click cart add
+Current url is: https://zrdshop.ru/cart/
+Click create order
+Current url is: https://zrdshop.ru/checkout/
+Input first name
+
+Finish test
