@@ -12,12 +12,6 @@ class Main_page(Base):
 
     move_to_cart = "https://zrdshop.ru/cart/"
 
-    def __init__(self, driver):
-
-        # Инициализация класса-родителя
-        super().__init__(driver)
-        self.driver = driver
-
 
     """ Locators """
 
@@ -75,27 +69,13 @@ class Main_page(Base):
 
         # Подключаю в метод Allure
         with allure.step("Select product"):
-            # Обращаюсь к классу Logger и вызываю до начала теста
+
             Logger.add_start_step(method="select_product")
-            # Получение текущего URL в терминале
             self.get_current_url()
-            # Нажатие на поле поиска
             self.click_search_field()
-            time.sleep(3)
-            # Ввод текста в поле поиска и отправка запроса
             self.input_search("Носки")
-            time.sleep(3)
-            # Выбор товара
             self.click_buy_product()
-            time.sleep(3)
-            # Добавление в корзину
             self.click_cart_add()
-            time.sleep(3)
-            # Открытие страницы
             self.driver.get(self.move_to_cart)
-            time.sleep(3)
-            # Максимизация окна браузера
             self.driver.maximize_window()
-            time.sleep(3)
-            # Обращаюсь к классу Logger и вызываю после завершения теста
             Logger.add_end_step(url=self.driver.current_url, method="select_product")

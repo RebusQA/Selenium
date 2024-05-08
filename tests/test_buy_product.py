@@ -25,7 +25,7 @@ def test_buy_product(set_up):
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
         driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
 
-        # Запуск экземпляров
+        # Вызов методов с шагами теста
         login = Login_page(driver)
         login.authorization()
 

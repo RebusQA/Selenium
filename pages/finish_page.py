@@ -7,11 +7,6 @@ from utilities.logger import Logger
 
 class Finish_page(Base):
 
-    def __init__(self, driver):
-
-        # Инициализация класса-родителя
-        super().__init__(driver)
-        self.driver = driver
 
     """ Methods """
 

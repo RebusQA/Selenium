@@ -8,13 +8,6 @@ from utilities.logger import Logger
 
 class Client_info_page(Base):
 
-    def __init__(self, driver):
-
-        # Инициализация класса-родителя
-        super().__init__(driver)
-        self.driver = driver
-
-
     """ Locators """
 
     first_name_locator = "//input[@id='billing_first_name']"
@@ -78,7 +71,7 @@ class Client_info_page(Base):
         self.get_telephone().clear()
         self.get_telephone().send_keys(telephone)
         print("Input telephone")
-        time.sleep(10)
+        time.sleep(7)
     def click_delivery_choice(self):
         self.get_delivery_choice().click()
         print("Click delivery choice button")
@@ -90,22 +83,15 @@ class Client_info_page(Base):
     def payment_details(self):
 
         with allure.step("Payment details"):
+
             Logger.add_start_step(method="payment_details")
             self.get_current_url()
             self.input_first_name("Иван")
-            time.sleep(3)
             self.input_last_name("Иванов")
-            time.sleep(3)
             self.input_address("ул. Любимая, 1")
-            time.sleep(3)
             self.input_locality("Михайловск")
-            time.sleep(3)
             self.input_region("Ставропольский край")
-            time.sleep(3)
             self.input_index("333777")
-            time.sleep(3)
             self.input_telephone("83337777777")
-            time.sleep(3)
             self.click_delivery_choice()
-            time.sleep(3)
             Logger.add_end_step(url=self.driver.current_url, method="payment_details")
